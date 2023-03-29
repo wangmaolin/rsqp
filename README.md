@@ -17,7 +17,7 @@ To verify the installation, first run the following command to make sure the car
 ## Part 1. Hello Solver
 A pre-synthesised FPGA architecture is in the `bitstream` folder. 
 The pre-compiled binary of QP problem to run on this architecture is in the `elf` folder.
-Run the following script to see the solver in action: 
+Run the following script to see the solver in action 🚀 
 
 `./fpga-solve.sh -sw=svm-s10-2-bf-949-194.fpga -hw=u50-2-bf-3259-275.xclbin`
 
