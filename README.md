@@ -1,6 +1,6 @@
 # The Reconfigurable Solver for QP
 RSQP is a framework for generating FPGA solvers for QPs.
-Some off-the-shelf bistreams are provided to solve generic QPs.
+Some off-the-shelf bitstreams are provided to solve generic QPs.
 If the sparsity strucutre of QPs to be solved are known, RSQP can analyze the sparsity structure and build a customized FPGA architecture for extra speed boost while solving a series of QPs with the same sparsity pattern.
 
 ## System Requirements
