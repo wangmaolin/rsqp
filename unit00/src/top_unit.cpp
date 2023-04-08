@@ -196,8 +196,10 @@ load_tetris_loop:
     }
 
     data_t abs_max = 0.0;
+norm_inf_reduce_loop:
     for (int i = 0; i < ISCA_C; i++)
     {
+#pragma HLS pipeline II = 2
         if (norm_temp[i]>abs_max)
         {
             abs_max=norm_temp[i];

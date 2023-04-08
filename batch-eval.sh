@@ -41,17 +41,18 @@ function job_unlock {
 if [ "$JOB_ID" = "1" ]; then
 	job_lock
 
+	./hw-hls-gen.sh -c=4 -a=bg -cvb=409 -vec=51 -b=u50 -g=1
 	# ===== 1-be, [[469, 81], [1078, 204], [4749, 550], [41808, 3932]] =====
-	./hw-hls-gen.sh -c=1 -a=be -cvb=469 -vec=81 -b=u50 -g=1
-	./hw-hls-gen.sh -c=1 -a=be -cvb=1078 -vec=204 -b=u50 -g=1
-	./hw-hls-gen.sh -c=1 -a=be -cvb=4749 -vec=550 -b=u50 -g=1
-	./hw-hls-gen.sh -c=1 -a=be -cvb=41808 -vec=3932 -b=u50 -g=1
+	# ./hw-hls-gen.sh -c=1 -a=be -cvb=469 -vec=81 -b=u50 -g=1
+	# ./hw-hls-gen.sh -c=1 -a=be -cvb=1078 -vec=204 -b=u50 -g=1
+	# ./hw-hls-gen.sh -c=1 -a=be -cvb=4749 -vec=550 -b=u50 -g=1
+	# ./hw-hls-gen.sh -c=1 -a=be -cvb=41808 -vec=3932 -b=u50 -g=1
 
 	# ===== 1-bce, [[469, 81], [1078, 204], [4749, 550], [41808, 3932]] =====
-	./hw-hls-gen.sh -c=1 -a=bce -cvb=469 -vec=81 -b=u50 -g=1
-	./hw-hls-gen.sh -c=1 -a=bce -cvb=1078 -vec=204 -b=u50 -g=1
-	./hw-hls-gen.sh -c=1 -a=bce -cvb=4749 -vec=550 -b=u50 -g=1
-	./hw-hls-gen.sh -c=1 -a=bce -cvb=41808 -vec=3932 -b=u50 -g=1
+	# ./hw-hls-gen.sh -c=1 -a=bce -cvb=469 -vec=81 -b=u50 -g=1
+	# ./hw-hls-gen.sh -c=1 -a=bce -cvb=1078 -vec=204 -b=u50 -g=1
+	# ./hw-hls-gen.sh -c=1 -a=bce -cvb=4749 -vec=550 -b=u50 -g=1
+	# ./hw-hls-gen.sh -c=1 -a=bce -cvb=41808 -vec=3932 -b=u50 -g=1
 
 	job_unlock
 fi
@@ -61,15 +62,15 @@ if [ "$JOB_ID" = "2" ]; then
 
 	# ===== 4-bg, [[166, 21], [409, 51], [1965, 138], [20395, 983]] =====
 	./hw-hls-gen.sh -c=4 -a=bg -cvb=166 -vec=21 -b=u50 -g=1
-	./hw-hls-gen.sh -c=4 -a=bg -cvb=409 -vec=51 -b=u50 -g=1
-	./hw-hls-gen.sh -c=4 -a=bg -cvb=1965 -vec=138 -b=u50 -g=1
-	./hw-hls-gen.sh -c=4 -a=bg -cvb=20395 -vec=983 -b=u50 -g=1
+	# ./hw-hls-gen.sh -c=4 -a=bg -cvb=409 -vec=51 -b=u50 -g=1
+	# ./hw-hls-gen.sh -c=4 -a=bg -cvb=1965 -vec=138 -b=u50 -g=1
+	# ./hw-hls-gen.sh -c=4 -a=bg -cvb=20395 -vec=983 -b=u50 -g=1
 
 	# ===== 4-bcg, [[166, 21], [409, 51], [1965, 138], [20395, 983]] =====
-	./hw-hls-gen.sh -c=4 -a=bcg -cvb=166 -vec=21 -b=u50 -g=1
-	./hw-hls-gen.sh -c=4 -a=bcg -cvb=409 -vec=51 -b=u50 -g=1
-	./hw-hls-gen.sh -c=4 -a=bcg -cvb=1965 -vec=138 -b=u50 -g=1
-	./hw-hls-gen.sh -c=4 -a=bcg -cvb=20395 -vec=983 -b=u50 -g=1
+	# ./hw-hls-gen.sh -c=4 -a=bcg -cvb=166 -vec=21 -b=u50 -g=1
+	# ./hw-hls-gen.sh -c=4 -a=bcg -cvb=409 -vec=51 -b=u50 -g=1
+	# ./hw-hls-gen.sh -c=4 -a=bcg -cvb=1965 -vec=138 -b=u50 -g=1
+	# ./hw-hls-gen.sh -c=4 -a=bcg -cvb=20395 -vec=983 -b=u50 -g=1
 
 	job_unlock # ------
 fi

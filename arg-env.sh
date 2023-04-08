@@ -92,5 +92,5 @@ if [ -z "$ARCH_CODE" ]; then
 fi
 
 if [ -z "$FADD_II" ]; then
-    FADD_II=8
+    FADD_II=4
 fi

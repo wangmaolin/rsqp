@@ -37,3 +37,15 @@ To synthesis a new FPGA architecture, Vitis 2021.1 is needed.
 Install the tool using this [guide](https://docs.xilinx.com/r/2021.1-English/ug1400-vitis-embedded/Installing-the-Vitis-Software-Platform).
 
 `./hw-hls-gen.sh -c=2 -a=bf -cvb=3259 -vec=275 -b=u50 -g=1`
+
+## Results
+
+## Citation
+If you found our work useful in your research, please consider citing our paper at
+
+    @inproceedings{rsqp,
+	Author = {Wang, Maolin and McInerney, Ian and Stellato, Bartolomeo and Boyd, Stephen and So, Hayden},
+	Title = {RSQP: Problem-specific Architectural Customization for Accelerated Convex Quadratic Optimization},
+	Booktitle  = {2023 ACM/IEEE 50th Annual International Symposium on Computer Architecture (ISCA)},
+	Year = {2023}
+    }

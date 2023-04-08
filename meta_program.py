@@ -197,8 +197,10 @@ def hw_gen(arch_code,
             text_file.write("sp=cu_top_1.mem_nnz_{0}:HBM[{1}] \n".format(i, i))
             text_file.write("sp=cu_top_1.mem_col_{0}:HBM[{1}] \n".format(i, hbm_pc+i))
         for i in range(hbm_pc):
-            text_file.write("sp=cu_top_1.mem_lhs_{0}:HBM[{1}] \n".format(i, 2*i))
-            text_file.write("sp=cu_top_1.mem_rhs_{0}:HBM[{1}] \n".format(i, 2*i+1))
+            # text_file.write("sp=cu_top_1.mem_lhs_{0}:HBM[{1}] \n".format(i, 2*i))
+            # text_file.write("sp=cu_top_1.mem_rhs_{0}:HBM[{1}] \n".format(i, 2*i+1))
+            text_file.write("sp=cu_top_1.mem_lhs_{0}:HBM[{1}] \n".format(i, i))
+            text_file.write("sp=cu_top_1.mem_rhs_{0}:HBM[{1}] \n".format(i, hbm_pc+i))
 
     snippet_file = src_root +  'col_interface.h'
     with open(snippet_file, "w") as text_file:
